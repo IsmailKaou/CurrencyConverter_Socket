@@ -62,7 +62,7 @@ public class ClientCurrencyConverter {
         formPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         // Result label
-        JLabel resultLabel = new JLabel("Getting Exchange Rate...");
+        JLabel resultLabel = new JLabel("Getting Exchange ...");
 
         // Amount input
         JPanel amountPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
@@ -73,7 +73,7 @@ public class ClientCurrencyConverter {
 
 
 
-        Dimension amountFieldSize = new Dimension(100, 24);
+        Dimension amountFieldSize = new Dimension(300, 24);
         amountField.setPreferredSize(amountFieldSize);
         amountPanel.add(amountLabel);
         amountPanel.add(amountField);
@@ -168,7 +168,7 @@ public class ClientCurrencyConverter {
 
 
         // Button
-        JButton getRateButton = new JButton("Get Exchange Rate");
+        JButton getRateButton = new JButton("Convert");
 
         getRateButton.addActionListener(new ActionListener() {
             @Override
